@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import Upcoming from './Upcoming';
 import Patient from './Patient';
 
-function Sidebar() {
+function Home() {
   return (
     <div id="main">
     <div className='sidebar'>
@@ -45,4 +45,4 @@ function Sidebar() {
   )
 }
 
-export default Sidebar
+export default Home

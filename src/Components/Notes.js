@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Patient extends Component {
+class Notes extends Component {
    
 
     render() {
@@ -9,8 +9,10 @@ class Patient extends Component {
                 <div>
                         Notes
                 </div>
-                <div>
-
+                <div className="content">
+                        - This patient is Lorem ipsum dolor sit amet.
+                        - Lorem ipsum dolor sit, amet 
+                        - has alergic history with Cataflam
                 </div>
                 <div>
                     Lorem ipsum dolor sit amet.
