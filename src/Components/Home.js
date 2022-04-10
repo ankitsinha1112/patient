@@ -31,8 +31,6 @@ class Home extends Component {
       print: false
     })
   }
-  //   exe =() =>{
-  // }
 
   render() {
     return (
@@ -49,8 +47,8 @@ class Home extends Component {
               console.log(this.href);
               return (
                 <li key={key} className='row' id={window.location.href === "https://www.patient.tk/#" + (val.link) ? "active" : ""} onClick={() => {
-                  (window.location.href = "https://www.patient.tk/#" + (val.link)).then(() =>
-                    window.location.reload())
+                  (window.location.href = "https://www.patient.tk/#" + (val.link));
+                    window.location.reload();
             }}>
             <div id="icon">
               {val.icon}
