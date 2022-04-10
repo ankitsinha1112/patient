@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/patient/static/css/main.d143a92e.css",
+    "main.js": "/patient/static/js/main.3773a419.js",
+    "static/js/787.ddad04e8.chunk.js": "/patient/static/js/787.ddad04e8.chunk.js",
+    "index.html": "/patient/index.html",
+    "main.d143a92e.css.map": "/patient/static/css/main.d143a92e.css.map",
+    "main.3773a419.js.map": "/patient/static/js/main.3773a419.js.map",
+    "787.ddad04e8.chunk.js.map": "/patient/static/js/787.ddad04e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d143a92e.css",
+    "static/js/main.3773a419.js"
+  ]
+}
