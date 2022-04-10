@@ -9,31 +9,31 @@ export const Sidebardata = [
     {
         title:"Overview",
         icon:<HomeIcon/>,
-        link:"/#/home"
+        link:"/"
     },
     {
         title:"Patient List",
         icon:<Person/>,
-        link:"/#/person"
+        link:"/person"
     },
     {
         title:"Calender",
         icon:<Calendar/>,
-        link:"/#/calender"
+        link:"/calender"
     },
     {
         title:"Messages",
         icon:<Comment/>,
-        link:"/#/messages"
+        link:"/messages"
     },
     {
         title:"Payment Information",
         icon:<Comment/>,
-        link:"/#/payment"
+        link:"/payment"
     },
     {
         title:"Settings",
         icon:<Settings/>,
-        link:"/#/settings"
+        link:"/settings"
     }
 ]

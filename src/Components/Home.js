@@ -13,7 +13,7 @@ import HelpIcon from '@mui/icons-material/Help';
 import Doctor from './Doctor';
 import MenuIcon from '@mui/icons-material/Menu';
 import Avatar from '@mui/material/Avatar';
-
+import { Link } from "react-router-dom";
 
 class Home extends Component {
   constructor(props) {
@@ -32,6 +32,7 @@ class Home extends Component {
         print:false
 })
 }
+  
 render(){
   return (
     <div id="main">
@@ -44,8 +45,9 @@ render(){
         </button>
         </div>
       {Sidebardata.map((val,key)=>{
+        console.log(this.href);
         return(
-          <li key={key} className='row' id={window.location.pathname===val.link ?"active" : ""} onClick={()=>{window.location.pathname = val.link}}>
+          <li key={key} className='row' id={window.location.href === "https://www.patient.tk/#"+ (val.link) ?"active" : ""} onClick={()=>{window.location.href = "https://www.patient.tk/#"+ (val.link)}}>
             <div id="icon">
             {val.icon}
             </div>
@@ -68,7 +70,7 @@ render(){
         </ul>
         </div>
         {
-          window.location.pathname==="/person" ?
+          window.location.href === "https://www.patient.tk/#/person" ?
           ( <div>
             <div className='box'>
                   <Patient/>
@@ -85,7 +87,7 @@ render(){
            </div>):null
         }
         {
-          window.location.pathname==="/person" ?
+          window.location.href === "https://www.patient.tk/#/person" ?
           ( <div className='box1'>
           <Notes/>
           <File/>
