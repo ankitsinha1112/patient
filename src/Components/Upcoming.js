@@ -30,7 +30,7 @@ class Upcoming extends Component {
       <div>
             <div id="container">
               <div>
-                <div id="date">{this.state.data.Date}</div>
+                <div className="date">{this.state.data.Date}</div>
                 <div className="light">{this.state.data.Time}</div>
               </div>
               <div>
