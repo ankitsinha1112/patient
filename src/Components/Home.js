@@ -13,7 +13,6 @@ import HelpIcon from '@mui/icons-material/Help';
 import Doctor from './Doctor';
 import MenuIcon from '@mui/icons-material/Menu';
 import Avatar from '@mui/material/Avatar';
-import { Link } from "react-router-dom";
 
 class Home extends Component {
   constructor(props) {
