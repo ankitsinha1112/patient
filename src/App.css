@@ -79,3 +79,20 @@
       height: 100vh;
       margin: 2vh;
   }
+#container{
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+.bold{
+    font-weight: bold;
+}
+.light{
+    font-weight: lighter;
+}
+#date{
+    font-size: x-large;
+}

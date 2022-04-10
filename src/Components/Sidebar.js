@@ -3,6 +3,8 @@ import '../App.css';
 import {Sidebardata} from './Sidebardata.js';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
+import Upcoming from './Upcoming';
+import Patient from './Patient';
 
 function Sidebar() {
   return (
@@ -30,11 +32,13 @@ function Sidebar() {
                 </ul>
            </div>
            <div className='box'>
+                 <Patient/>
                 <ButtonGroup variant="outlined" aria-label="outlined button group">
                    <Button>Upcoming Appointments</Button>
-                   <Button>Post Appointments</Button>
+                   <Button>Past Appointments</Button>
                    <Button>Medical Records</Button>
                   </ButtonGroup>
+                   <Upcoming/>
            </div>
         </div>
       </div>
