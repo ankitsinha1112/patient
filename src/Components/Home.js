@@ -5,14 +5,27 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
 import Upcoming from './Upcoming';
 import Patient from './Patient';
+
 import Notes from './Notes';
 import File from './File';
+
+import HelpIcon from '@mui/icons-material/Help';
+import Doctor from './Doctor';
+import MenuIcon from '@mui/icons-material/Menu';
+import Avatar from '@mui/material/Avatar';
+
 
 function Home() {
   return (
     <div id="main">
     <div className='sidebar'>
       <ul className='sidebarlist'>
+      <div className="logo">
+        <Avatar>H</Avatar>
+        <button className="menu" id="icon" onClick={onclick}>
+          <MenuIcon/>
+        </button>
+        </div>
       {Sidebardata.map((val,key)=>{
         return(
           <li key={key} className='row' id={window.location.pathname===val.link ?"active" : ""} onClick={()=>{window.location.pathname = val.link}}>
@@ -25,6 +38,18 @@ function Home() {
             </li>
           )
         })}
+          <div className="help">
+          <div className='row' id="icon">
+            <HelpIcon/>
+          </div>
+          <div className='row' id="title">
+            Help
+          </div>
+        </div>
+        <hr />
+        <div>
+        <Doctor/>
+        </div>
         </ul>
         </div>
         <div>
