@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import '../App.css';
 import {Sidebardata} from './Sidebardata.js';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -15,7 +15,24 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Avatar from '@mui/material/Avatar';
 
 
-function Home() {
+class Home extends Component {
+  constructor(props) {
+    super(props);
+      this.state = {
+        print:true,
+      };
+  }
+  handleprint =() =>{
+    this.setState({
+        print:true
+})
+}
+  handleprint1 =() =>{
+    this.setState({
+        print:false
+})
+}
+render(){
   return (
     <div id="main">
     <div className='sidebar'>
@@ -39,10 +56,8 @@ function Home() {
           )
         })}
           <div className="help">
-          <div className='row' id="icon">
-            <HelpIcon/>
-          </div>
           <div className='row' id="title">
+            <HelpIcon/>
             Help
           </div>
         </div>
@@ -52,24 +67,33 @@ function Home() {
         </div>
         </ul>
         </div>
-        <div>
-           <div className='box'>
-                 <Patient/>
-                <ButtonGroup variant="outlined" aria-label="outlined button group">
-                   <Button>Upcoming Appointments</Button>
-                   <Button>Past Appointments</Button>
-                   <Button>Medical Records</Button>
-                  </ButtonGroup>
-                   <Upcoming/>
-           </div>
-          </div>
-           <div className='box1'>
-                  <Notes/>
-                  <File/>
+        {
+          window.location.pathname==="/person" ?
+          ( <div>
+            <div className='box'>
+                  <Patient/>
+                 <ButtonGroup variant="outlined" aria-label="outlined button group">
+                    <Button onClick={() => this.handleprint()}>Upcoming Appointments</Button>
+                    <Button onClick={() => this.handleprint1()}>Past Appointments</Button>
+                    <Button onClick={() => this.handleprint1()}>Medical Records</Button>
+                   </ButtonGroup>
+                   {
+                   this.state.print?
+                    (<Upcoming/>):(null)
+                   }
+            </div>
+           </div>):null
+        }
+        {
+          window.location.pathname==="/person" ?
+          ( <div className='box1'>
+          <Notes/>
+          <File/>
 
-           </div>
+   </div>):null
+        }
       </div>
   )
 }
-
+}
 export default Home

@@ -47,8 +47,12 @@ class Upcoming extends Component {
               </div>
               <div>
                 <div >
-                  < ArticleIcon />
-                  <a href="{this.state.data.doc}">Note</a>
+                  
+                  <a href="{this.state.data.doc}"><div id="nowrap">
+                      <div>
+                      < ArticleIcon />
+                      </div> <div>Note</div>
+                      </div></a>
                 </div>
               </div>
               

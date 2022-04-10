@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Grid from '@mui/material/Grid';
+import Avatar from '@mui/material/Avatar';
 
 class Patient extends Component {
     state = {
@@ -30,6 +31,11 @@ class Patient extends Component {
             <div>
                 <div id="container1">
                     <div id="box1">
+                    <Avatar
+  alt="Remy Sharp"
+  src="/static/images/avatar/1.jpg"
+  sx={{ width: 56, height: 56 }}
+/>
                         <div className="date bold" >{this.state.data.name}</div>
                         <div>{this.state.data["e-email"]}</div>
                         <div className="wrap">

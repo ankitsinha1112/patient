@@ -7,7 +7,7 @@ import Settings from '@mui/icons-material/Settings';
 
 export const Sidebardata = [
     {
-        title:"name dummy",
+        title:"Overview",
         icon:<HomeIcon/>,
         link:"/home"
     },

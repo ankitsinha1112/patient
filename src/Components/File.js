@@ -35,7 +35,7 @@ class File extends Component {
                   </div>
                 <div >
                   <a href="#">
-                      <div className="wrap">
+                      <div id="nowrap">
                       <div>
                       < InsertDriveFileIcon />
                       </div>
@@ -47,13 +47,25 @@ class File extends Component {
                 </div>
               </div>
               <div>
-              <a href="{this.state.data[0]}"> < InsertDriveFileIcon /> Check Up Result.pdf</a>
+              <a href="{this.state.data[0]}"> <div id="nowrap">
+                      <div>
+                      < InsertDriveFileIcon />
+                      </div> <div>Check Up Result.pdf </div>
+                      </div></a>
               </div>
               <div>
-              <a href="{this.state.data[1]}"> < InsertDriveFileIcon /> Dental X-Ray Result 2.pdf</a>
+              <a href="{this.state.data[1]}"> <div id="nowrap">
+                      <div>
+                      < InsertDriveFileIcon />
+                      </div> <div> Dental X-Ray Result 2.pdf</div>
+                      </div></a>
               </div>
               <div>
-              <a href="{this.state.data[2]}"> < InsertDriveFileIcon /> Medical Prescriptions.pdf</a>
+              <a href="{this.state.data[2]}"> <div id="nowrap">
+                      <div>
+                      < InsertDriveFileIcon />
+                      </div> <div> Medical Prescriptions.pdf</div>
+                      </div></a>
               </div>
               
               
