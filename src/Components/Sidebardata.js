@@ -9,7 +9,7 @@ export const Sidebardata = [
     {
         title:"Overview",
         icon:<HomeIcon/>,
-        link:"/"
+        link:"/home"
     },
     {
         title:"Patient List",
@@ -19,21 +19,21 @@ export const Sidebardata = [
     {
         title:"Calender",
         icon:<Calendar/>,
-        link:"/"
+        link:"/calender"
     },
     {
         title:"Messages",
         icon:<Comment/>,
-        link:"/"
+        link:"/messages"
     },
     {
         title:"Payment Information",
         icon:<Comment/>,
-        link:"/"
+        link:"/payment"
     },
     {
         title:"Settings",
         icon:<Settings/>,
-        link:"/"
+        link:"/settings"
     }
 ]
