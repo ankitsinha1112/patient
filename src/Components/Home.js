@@ -5,6 +5,8 @@ import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
 import Upcoming from './Upcoming';
 import Patient from './Patient';
+import Notes from './Notes';
+import File from './File';
 
 function Home() {
   return (
@@ -26,11 +28,6 @@ function Home() {
         </ul>
         </div>
         <div>
-           <div>
-                <ul>
-                  
-                </ul>
-           </div>
            <div className='box'>
                  <Patient/>
                 <ButtonGroup variant="outlined" aria-label="outlined button group">
@@ -40,7 +37,12 @@ function Home() {
                   </ButtonGroup>
                    <Upcoming/>
            </div>
-        </div>
+          </div>
+           <div className='box1'>
+                  <Notes/>
+                  <File/>
+
+           </div>
       </div>
   )
 }
